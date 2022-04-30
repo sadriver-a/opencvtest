@@ -243,3 +243,9 @@ bool Pretreatment::PrespectiveTransform()
 	cv::imshow("ͶӰ�任", outImg);
 	return true;
 }
+
+int Pretreatment::PretreatmentImage1()
+{
+
+	return 0;
+}
