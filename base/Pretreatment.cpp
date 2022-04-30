@@ -246,12 +246,28 @@ bool Pretreatment::PrespectiveTransform()
 
 int Pretreatment::PretreatmentImage2()
 {
+	//边界填充
+	AddBorder(m_origImg);
+
+
 	//转化为灰度图
 	//原本就是灰度图
 	cv::cvtColor(m_origImg, m_grayImg, cv::COLOR_BGR2GRAY);
 	cv::namedWindow("灰度图", CV_WINDOW_AUTOSIZE);
 	imshow("灰度图", m_grayImg);
 
+
+	//距离变换结果
+
+	//归一化
+
+	//自动阈值
+
+	//形态学腐蚀膨胀
+
+	//寻找标记，轮廓查找，填充
+
+	//分水岭
 
 	return 0;
 }
