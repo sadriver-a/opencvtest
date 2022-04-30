@@ -26,8 +26,8 @@ int main()
 		return -1;
 	}
 	pImgPretreat->ShowOriginalImg();
-	/*pImgPretreat->PretreatmentImage();*/
-	pImgPretreat->PrespectiveTransform();
+	pImgPretreat->PretreatmentImage2();
+	/*pImgPretreat->PrespectiveTransform();*/
 
 	waitKey(0);
 

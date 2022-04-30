@@ -243,3 +243,15 @@ bool Pretreatment::PrespectiveTransform()
 	cv::imshow("投影变换", outImg);
 	return true;
 }
+
+int Pretreatment::PretreatmentImage2()
+{
+	//转化为灰度图
+	//原本就是灰度图
+	cv::cvtColor(m_origImg, m_grayImg, cv::COLOR_BGR2GRAY);
+	cv::namedWindow("灰度图", CV_WINDOW_AUTOSIZE);
+	imshow("灰度图", m_grayImg);
+
+
+	return 0;
+}

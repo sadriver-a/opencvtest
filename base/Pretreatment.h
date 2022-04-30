@@ -25,6 +25,8 @@ private:
 	void Sharpen(cv::Mat &img);
 public:
 	explicit Pretreatment(std::string imgPath);
+	int PretreatmentImage2();
+
 	~Pretreatment();
 
 	void ShowOriginalImg();
